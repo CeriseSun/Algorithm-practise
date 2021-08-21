@@ -1,0 +1,12 @@
+def twoNumberSum(array, targetSum):
+    # have an empty hash table to store numbers
+    nums = {}
+	for firstNum in array:
+		secondNum = targetSum - firstNum
+		# if the second number is in the hash table, return two numbers
+    if secondNum in nums:
+			return [firstNum, secondNum]
+		# else store the number into hash table
+    else:
+			nums[firstNum] = True
+	return []
