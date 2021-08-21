@@ -1,0 +1,17 @@
+def twoNumberSum(array, targetSum):
+  # sort the array first
+  array.sort()
+	# set leftpointer to be the first element in the array
+  left = 0
+	# set rightpointer to be the last element in the array
+  right = len(array) - 1
+	# leftpointer must be smaller that rightpointer
+  while left < right:
+		currentSum = array[left] + array[right]
+		if currentSum == targetSum:
+      return [array[left], array[right]]
+		elif currentSum < targetSum:
+			left += 1
+		elif currentSum > targetSum:
+			right -= 1
+	return []	
