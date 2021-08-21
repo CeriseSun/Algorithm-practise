@@ -1,1 +1,1 @@
-# Two-Number-Sum
+# Algorithm-Practise
